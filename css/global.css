@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Merriweather", serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --nav-height: 7.2rem;
+
+    --blue-900: #71ACE3;
+    --blue-800: #7EC0FD;
+    --blue-700: #8AC6FD;
+    --blue-600: #97CCFD;
+    --blue-500: #A4D2FD;
+    --blue-400: #B1D9FD;
+    --blue-300: #BEDFFE;
+
+    --text-blue-white: #E2F1FF;
+    --text-blue-black: #1C3D5C;
+
+    --white: #f1f1f1;
+}  
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  .wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+  
+    padding-inline: 2.4rem;
+  }
+
+  section {
+    padding-block: 10rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1rem;
+    background-color: #ffffff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    width: 1rem;
+    background-color: #00e1ff97;
+  }

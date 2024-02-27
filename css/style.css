@@ -1,0 +1,580 @@
+@import "./navigation.css";
+@import "./global.css";
+
+/*HEADER HOME =================== */
+:root {
+  --poppins: 'Poppins', sans-serif;
+}
+
+#home {
+  background-image: url(../assets/medicos\ operando\ sergio\ aidar\ fundo\ \(1\).jpg);
+  background-size: cover;
+
+  height: 110vh;
+}
+
+#home .content {
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .content .text {
+  margin-top: 10rem;
+}
+
+#home .content .text h1 {
+  font-size: 2rem;
+  color: var(--text-blue-white);
+  font-weight: 400;
+  margin-bottom: 2rem;
+
+  line-height: 1.6;
+}
+
+#home .content .text h1 span {
+  font-weight: 700;
+  color: #fff;
+}
+
+#home .content .text .buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#home .content .text a button {
+  font-family: var(--poppins);
+
+  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  color: var(--text-blue-black);
+  font-weight: 500;
+
+  transition: all 200ms ease-in-out;
+}
+
+#home .content .text a button:hover {
+  box-shadow: 1px 1px 20px #00425775;
+  cursor: pointer;
+}
+
+#home .content .image {
+  margin-top: 5rem;
+  margin-bottom: -7.2rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+#home .content .image img.sergio {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+#home .content .image img.blobs {
+  position: absolute;
+  width: 35rem;
+  bottom: -6rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#home .content .image img.eclipse {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+}
+/*SERVICES=================== */
+#services {
+  background-color: var(--white)
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+#services .cards .card {
+  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #7EC0FD;
+
+  box-shadow:  7px 7px 10px #e0e0e0,
+             -7px -7px 10px #ffffff;
+}
+
+#services .cards .card img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+#services .cards .card h3 {
+  color: var(--text-blue-black);
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+#services .cards .card p {
+  color: var(--text-blue-black);
+  font-family: var(--poppins);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+#services .cards .card a {
+  text-decoration: none;
+}
+
+#services .cards .card a button {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--text-blue-black);
+  background-color: transparent;
+  border-radius: 1rem;
+  border: none;
+}
+
+#services .cards .card a button ion-icon {
+  color: var(--text-blue-black);
+}
+/*CIRURGIAS=================== */
+#cirurgiasDesktop {
+  display: none;
+}
+
+#cirurgias header h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--text-blue-black);
+  font-size: 3rem;
+}
+
+#cirurgias {
+  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+}
+
+#cirurgias .cards {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+#cirurgias .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4rem;
+  padding: 2rem;
+
+
+  background: linear-gradient(90deg, #e0e0e0 0%, #ffffff 100%);
+  width: 100%;
+  border-radius: 1rem;
+  border-left: 2px solid var(--text-blue-black);
+
+  box-shadow:  7px 7px 14px #74b1e9,
+             -7px -7px 14px #88cfff;
+
+  position: relative;
+}
+
+#cirurgias .cards .card img {
+  width: 10rem;
+  position: absolute;
+  right: 5%;
+
+  filter: drop-shadow(2px 2px 10px #b2e7ff);
+}
+
+#cirurgias .cards .card .text {
+  position: relative;
+}
+
+#cirurgias .cards .card .text h3 {
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+  color: var(--text-blue-black);
+}
+
+#cirurgias .cards .card .text ul {
+  font-size: 1.4rem;
+  font-family: var(--poppins);
+  color: var(--text-blue-black);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+#cirurgias .cards .card .text a {
+  text-decoration: none;
+}
+
+#cirurgias .cards .card .text a button {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--text-blue-black);
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+  padding: 1rem;
+
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+#cirurgias .cards .card .text a button ion-icon {
+  color: var(--text-blue-black);
+}
+
+#cirurgias .cards .card .text a button:hover {
+  box-shadow: 1px 1px 10px #3278b67a;
+}
+/*MATERIAL=================== */
+#material {
+  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+}
+
+#material .content {
+  margin-top: 5rem;
+  background-color: var(--blue-900);
+  border-radius: 1rem;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  padding-inline: 2rem;
+  position: relative;
+
+  box-shadow:  6px 6px 12px #6ba3d7,
+             -6px -6px 12px #91ddff;
+}
+
+#material .image {
+  display: flex;
+  justify-content: center;
+}
+
+#material .image img {
+  width: 60%;
+  position: absolute;
+  top: -17rem;
+  left: 5rem;
+
+  animation: ease-in-out infinite moveMockup 2s;
+}
+
+@keyframes moveMockup {
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+#material .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#material .text h2 {
+  color: var(--text-blue-black);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#material .text p {
+  font-family: var(--poppins);
+  font-size: 1.4rem;
+  color: var(--text-blue-black);
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#material .text p span {
+  font-family: var(--poppins);
+  color: var(--text-blue-black);
+  font-weight: 600;
+}
+
+#material .text a button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #e0e0e0 0%, #ffffff 100%);
+  font-weight: 700;
+  font-family: var(--poppins);
+  color: var(--text-blue-black);
+
+  transition: all 200ms ease-in-out;
+}
+
+#material .text a button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 20px #0043572f;
+}
+
+/*RESPONSIVE=================== */
+@media (min-width: 768px) {
+  .wrapper {
+    width: min(80rem, 100%);
+  }
+
+  header#home .wrapper .content .text h1 {
+    font-size: 3rem;
+  }
+
+  section#cirurgias .wrapper .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section#cirurgias .wrapper .cards .card {
+    min-height: 25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    width: min(120rem, 100%);
+  }
+
+  header#home {
+    height: 100vh;
+  }
+
+  header#home .wrapper .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    height: 100vh;
+  }
+
+  header#home .wrapper .content .text {
+    margin-top: initial;
+    text-align: start;
+  }
+  
+  header#home .wrapper .content .text h1 {
+    font-size: 3.5rem;
+  }
+
+  header#home .wrapper .content .image {
+    display: flex;
+    justify-content: end;
+  }
+
+  header#home .wrapper .content .image img.sergio {
+    filter: none;
+  }
+
+  header#home .wrapper .content .image img.blobs {
+    width: 40rem;
+    top: 30%;
+    left: 60%;
+    transform: initial;
+  }
+
+  header#home .wrapper .content .image img.eclipse {
+    width: 80rem;
+    top: 0;
+    right: 20rem;
+    transform: initial;
+  }
+
+  section#services .wrapper .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  section#services .wrapper .cards .card {
+    min-height: 38rem;
+  }
+
+  section#cirurgias .wrapper .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  section#cirurgias .wrapper .cards .card {
+    min-height: 24em;
+    border: 2px solid var(--text-blue-black);
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: min(140rem, 100%);
+  }
+
+  header#home {
+    height: 100vh;
+  }
+
+  header#home .wrapper .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    height: 100vh;
+  }
+
+  header#home .wrapper .content .text {
+    margin-top: initial;
+    text-align: start;
+  }
+
+  header#home .wrapper .content .text h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  } 
+
+  header#home .wrapper .content .text a button {
+    font-size: 2rem;
+  }
+
+  header#home .wrapper .content .image img.blobs {
+    width: 60rem;
+    top: 30%;
+    left: 55%;
+    transform: initial;
+  }
+
+  header#home .wrapper .content .image img.eclipse {
+    width: 80rem;
+    top: 0;
+    right: 20rem;
+    transform: initial;
+  }
+
+  section#services .wrapper .cards .card {
+    min-height: 30rem;
+  }
+
+  section#cirurgias {
+    display: none;
+  }
+
+  section#cirurgiasDesktop {
+    display: inherit;
+    background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+  }
+  
+  section#cirurgiasDesktop header h2 {
+    text-align: center;
+    color: var(--text-blue-black);
+    font-size: 4rem;
+  }
+
+  section#cirurgiasDesktop .content {
+    padding: 7rem;
+  }
+
+  section#cirurgiasDesktop .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    background: linear-gradient(90deg, #ebebeb 0%, #f3f3f3 100%);
+    padding: 3rem;
+    border-radius: 1rem;
+    min-height: 30rem;
+  }
+
+  section#cirurgiasDesktop .card img {
+    filter: drop-shadow(2px 2px 10px #92DCFF);
+  }
+
+  section#cirurgiasDesktop .card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-blue-black);
+  }
+
+  section#cirurgiasDesktop .card ul {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: var(--text-blue-black);
+  }
+
+  section#cirurgiasDesktop .card a button {
+    font-family: var(--poppins);
+
+    background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    color: var(--text-blue-black);
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+  section#cirurgiasDesktop .card a button:hover {
+    box-shadow: 1px 1px 20px #0043572f;
+    cursor: pointer;
+}
+
+  section#cirurgiasDesktop .wrapper svg {
+    transform: scale(2.5);
+    transition: all 200ms ease-in-out;
+  }
+
+  section#cirurgiasDesktop .wrapper svg:hover {
+    transform: scale(2.7);
+    cursor: pointer;
+  }
+
+  section#material .wrapper {
+    padding-inline: 10rem;
+  }
+
+  section#material .wrapper .content {
+    padding-top: initial;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    background-color: transparent;
+  }
+
+  section#material .wrapper .content .image img {
+    width: 25%;
+  }
+
+  section#material .wrapper .content .text {
+   align-items: start;
+  }
+
+  section#material .wrapper .content .text h2 {
+    font-size: 4rem;
+  }
+
+  section#material .wrapper .content .text p {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+}
+
+
+
+
+
+ 
