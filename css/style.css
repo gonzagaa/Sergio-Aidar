@@ -5,7 +5,7 @@
 :root {
   --poppins: 'Poppins', sans-serif;
   --gradient-verde-verde: linear-gradient(90deg, #0ABBB5 0%, #04E7DF 100%);
-  --gradient-verde-azul: linear-gradient(90deg, #0ABDB7 0%, #87D8FF 100%);
+  --gradient-verde-azul: linear-gradient(90deg, #06BEB6 0%, #48B1BF 100%);
 }
 
 #home {
@@ -187,7 +187,7 @@
   padding: 2rem;
 
 
-  background: var(--gradient-verde-verde);
+  background: #04E7DF;
   width: 100%;
   border-radius: 1rem;
   border-left: 2px solid var(--text-blue-black);
