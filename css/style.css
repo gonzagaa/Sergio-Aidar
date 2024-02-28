@@ -4,12 +4,13 @@
 /*HEADER HOME =================== */
 :root {
   --poppins: 'Poppins', sans-serif;
+  --gradient-verde-verde: linear-gradient(90deg, #0ABBB5 0%, #04E7DF 100%);
+  --gradient-verde-azul: linear-gradient(90deg, #0ABDB7 0%, #87D8FF 100%);
 }
 
 #home {
-  background-image: url(../assets/medicos\ operando\ sergio\ aidar\ fundo\ \(1\).jpg);
+  background-image: url(../assets/bg\ sergioaidar\ azul\ verde\ gradiente.jpg);
   background-size: cover;
-
   height: 110vh;
 }
 
@@ -25,6 +26,7 @@
 
 #home .content .text {
   margin-top: 10rem;
+  z-index: 2;
 }
 
 #home .content .text h1 {
@@ -50,7 +52,7 @@
 #home .content .text a button {
   font-family: var(--poppins);
 
-  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+  background: var(--gradient-verde-verde);
   border-radius: 1rem;
   padding: 1rem 2rem;
   border: none;
@@ -108,10 +110,10 @@
 }
 
 #services .cards .card {
-  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+  background: var(--gradient-verde-verde);
   border-radius: 1rem;
   padding: 2rem;
-  border: 1px solid #7EC0FD;
+  border: 1px solid #00a597;
 
   box-shadow:  7px 7px 10px #e0e0e0,
              -7px -7px 10px #ffffff;
@@ -166,7 +168,7 @@
 }
 
 #cirurgias {
-  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+  background: var(--gradient-verde-verde);
 }
 
 #cirurgias .cards {
@@ -185,13 +187,13 @@
   padding: 2rem;
 
 
-  background: linear-gradient(90deg, #e0e0e0 0%, #ffffff 100%);
+  background: var(--gradient-verde-verde);
   width: 100%;
   border-radius: 1rem;
   border-left: 2px solid var(--text-blue-black);
 
-  box-shadow:  7px 7px 14px #74b1e9,
-             -7px -7px 14px #88cfff;
+  box-shadow:  20px 20px 60px #099f9a,
+             -20px -20px 60px #0cd7d0;
 
   position: relative;
 }
@@ -234,7 +236,7 @@
   font-weight: 600;
   border: none;
   border-radius: 1rem;
-  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+  background: var(--gradient-verde-verde);
   padding: 1rem;
 
   transition: all 200ms ease-in-out;
@@ -250,17 +252,19 @@
 }
 /*MATERIAL=================== */
 #material {
-  background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+  background: var(--gradient-verde-verde);
 }
 
 #material .content {
   margin-top: 5rem;
-  background-color: var(--blue-900);
+  background-image: url(../assets/background\ ebook.jpg);
+  background-size: cover;
   border-radius: 1rem;
   padding-top: 10rem;
   padding-bottom: 2rem;
   padding-inline: 2rem;
   position: relative;
+  border: 2px solid #fff;
 
   box-shadow:  6px 6px 12px #6ba3d7,
              -6px -6px 12px #91ddff;
@@ -319,7 +323,7 @@
   border: none;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  background: linear-gradient(90deg, #e0e0e0 0%, #ffffff 100%);
+  background: var(--gradient-verde-verde);
   font-weight: 700;
   font-family: var(--poppins);
   color: var(--text-blue-black);
@@ -474,7 +478,7 @@
 
   section#cirurgiasDesktop {
     display: inherit;
-    background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+    background: var(--gradient-verde-verde);
   }
   
   section#cirurgiasDesktop header h2 {
@@ -492,7 +496,7 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 3rem;
-    background: linear-gradient(90deg, #ebebeb 0%, #f3f3f3 100%);
+    background: var(--gradient-verde-verde);
     padding: 3rem;
     border-radius: 1rem;
     min-height: 30rem;
@@ -517,7 +521,7 @@
   section#cirurgiasDesktop .card a button {
     font-family: var(--poppins);
 
-    background: linear-gradient(90deg, #7EC0FD 0%, #92DCFF 100%);
+    background: var(--gradient-verde-verde);
     border-radius: 1rem;
     padding: 1rem 2rem;
     border: none;
@@ -559,17 +563,12 @@
     width: 25%;
   }
 
-  section#material .wrapper .content .text {
-   align-items: start;
-  }
-
   section#material .wrapper .content .text h2 {
     font-size: 4rem;
   }
 
   section#material .wrapper .content .text p {
     font-size: 1.6rem;
-    text-align: left;
   }
 }
 

@@ -10,16 +10,17 @@
     font-size: 62.5%;
     --nav-height: 7.2rem;
 
-    --blue-900: #71ACE3;
-    --blue-800: #7EC0FD;
-    --blue-700: #8AC6FD;
-    --blue-600: #97CCFD;
-    --blue-500: #A4D2FD;
-    --blue-400: #B1D9FD;
-    --blue-300: #BEDFFE;
+    --blue-900: #089590;
+    --blue-800: #09A8A2;
+    --blue-700: #0ABBB5;
+    --blue-600: #22C1BC;
+    --blue-500: #3BC8C3;
+    --blue-400: #53CFCB;
+    --blue-300: #6CD6D2;
+    --blue-200: #84DDDA;
 
-    --text-blue-white: #E2F1FF;
-    --text-blue-black: #1C3D5C;
+    --text-blue-white: #E5FFFE;
+    --text-blue-black: #005956;
 
     --white: #f1f1f1;
 }  
