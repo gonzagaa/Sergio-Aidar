@@ -12,6 +12,8 @@
   background-image: url(../assets/bg\ sergioaidar\ azul\ verde\ gradiente.jpg);
   background-size: cover;
   height: 110vh;
+
+  position: relative;
 }
 
 #home .content {
@@ -25,6 +27,7 @@
 }
 
 #home .content .text {
+  margin-left: 1rem;
   margin-top: 10rem;
   z-index: 2;
 }
@@ -99,6 +102,10 @@
 /*SERVICES=================== */
 #services {
   background-color: var(--white)
+}
+
+#services .logoSmall {
+  display: none;
 }
 
 #services .cards {
@@ -185,15 +192,13 @@
   align-items: start;
   gap: 4rem;
   padding: 2rem;
-
-
-  background: #04E7DF;
+  background: var(--gradient-verde-azul);
   width: 100%;
   border-radius: 1rem;
   border-left: 2px solid var(--text-blue-black);
 
-  box-shadow:  20px 20px 60px #099f9a,
-             -20px -20px 60px #0cd7d0;
+  box-shadow:  10px 10px 30px #099f9a,
+             -10px -10px 30px #0cd7d0;
 
   position: relative;
 }
@@ -229,18 +234,17 @@
 }
 
 #cirurgias .cards .card .text a button {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  color: var(--text-blue-black);
-  font-weight: 600;
-  border: none;
-  border-radius: 1rem;
-  background: var(--gradient-verde-verde);
-  padding: 1rem;
-
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
+  font-family: var(--poppins);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: var(--text-blue-white);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    color: var(--text-blue-black);
+    font-weight: 500;
+    transition: all 200ms ease-in-out;
 }
 
 #cirurgias .cards .card .text a button ion-icon {
@@ -248,16 +252,16 @@
 }
 
 #cirurgias .cards .card .text a button:hover {
-  box-shadow: 1px 1px 10px #3278b67a;
+  box-shadow: 1px 1px 10px #32adb67a;
 }
 /*MATERIAL=================== */
 #material {
-  background: var(--gradient-verde-verde);
+  background: var(--gradient-verde-azul);
 }
 
 #material .content {
   margin-top: 5rem;
-  background-image: url(../assets/background\ ebook.jpg);
+  background-image: url(../assets/BG\ EBOOK.jpg);
   background-size: cover;
   border-radius: 1rem;
   padding-top: 10rem;
@@ -266,8 +270,8 @@
   position: relative;
   border: 2px solid #fff;
 
-  box-shadow:  6px 6px 12px #6ba3d7,
-             -6px -6px 12px #91ddff;
+  box-shadow:  10px 10px 21px #3d96a2,
+             -10px -10px 21px #53ccdc;
 }
 
 #material .image {
@@ -335,7 +339,73 @@
   cursor: pointer;
   box-shadow: 1px 1px 20px #0043572f;
 }
+/*Sobre=================== */
+#sobre {
+  background-color: var(--white);
+}
 
+#sobre .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#sobre header h2 {
+  color: var(--text-blue-black);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#sobre .text p {
+  margin-bottom: 4rem;
+
+  font-family: var(--poppins);
+  font-size: 1.4rem;
+  color: #002e2c;
+  line-height: 1.6;
+  font-weight: 300;
+  text-align: center;
+}
+
+#sobre .text p span {
+  color: var(--text-blue-black);
+  font-weight: 600;
+}
+
+#sobre .image {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+}
+
+#sobre .image img {
+  width: 80%;
+  border-radius: 4rem;
+  border: 3px solid var(--text-blue-black);
+}
+
+#sobre .image ion-icon {
+  position: absolute;
+  font-size: 3rem;
+  z-index: 2;
+  left: 7%;
+  top: -3%;
+
+  background-color: var(--text-blue-black);
+  color: var(--text-blue-white);
+  border-radius: 50%;
+  padding: .8rem;
+
+  animation: moveIonIcon infinite 4s linear;
+}
+
+@keyframes moveIonIcon {
+  50% {
+    transform: translateY(-4px);
+  }
+}
 /*RESPONSIVE=================== */
 @media (min-width: 768px) {
   .wrapper {
@@ -353,6 +423,21 @@
 
   section#cirurgias .wrapper .cards .card {
     min-height: 25rem;
+  }
+
+  section#material .wrapper .content .image img {
+    width: 35%;
+    left: -2rem;
+    top: -30%;
+  }
+
+  section#material .wrapper .content {
+    padding-top: initial;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    background-color: transparent;
   }
 }
 
@@ -390,18 +475,16 @@
     filter: none;
   }
 
-  header#home .wrapper .content .image img.blobs {
-    width: 40rem;
-    top: 30%;
-    left: 60%;
-    transform: initial;
+  section#services {
+    position: relative;
   }
 
-  header#home .wrapper .content .image img.eclipse {
-    width: 80rem;
-    top: 0;
-    right: 20rem;
-    transform: initial;
+  section#services .logoSmall {
+    display: inherit;
+    position: absolute;
+    left: -5%;
+    top: 10%;
+    opacity: .4;
   }
 
   section#services .wrapper .cards {
@@ -421,6 +504,32 @@
   section#cirurgias .wrapper .cards .card {
     min-height: 24em;
     border: 2px solid var(--text-blue-black);
+  }
+
+  section#material .wrapper .content .image img {
+    width: 30%;
+    left: 5%;
+  }
+
+  section#sobre .wrapper .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section#sobre .wrapper .content .image {
+    justify-content: end;
+  }
+  
+  section#sobre .wrapper .content .image ion-icon {
+    left: 18%;
+  }
+
+  section#sobre .wrapper .content .text h2 {
+    font-size: 4rem;
+  }
+
+  section#sobre .wrapper .content .text p {
+    font-size: 1.6rem;
   }
 }
 
@@ -454,20 +563,6 @@
     font-size: 2rem;
   }
 
-  header#home .wrapper .content .image img.blobs {
-    width: 60rem;
-    top: 30%;
-    left: 55%;
-    transform: initial;
-  }
-
-  header#home .wrapper .content .image img.eclipse {
-    width: 80rem;
-    top: 0;
-    right: 20rem;
-    transform: initial;
-  }
-
   section#services .wrapper .cards .card {
     min-height: 30rem;
   }
@@ -493,41 +588,82 @@
 
   section#cirurgiasDesktop .card {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-evenly;
     gap: 3rem;
-    background: var(--gradient-verde-verde);
-    padding: 3rem;
-    border-radius: 1rem;
-    min-height: 30rem;
+  }
+
+  section#cirurgiasDesktop .card .image {
+    background-color: var(--gradient-verde-azul);
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #04E7DF;
+
+    box-shadow: 2px 2px 10px #099f9a;
+
+    position: relative;
+  }
+
+  section#cirurgiasDesktop .card .image ion-icon {
+    font-size: 5rem;
+    top: -2rem;
+    left: -2rem;
+    position: absolute;
+    color: var(--text-blue-black);
+
+    animation: Check infinite ease-in-out 3s;
+  }
+
+  @keyframes Check {
+    50% {
+      opacity: .7;
+    }
   }
 
   section#cirurgiasDesktop .card img {
     filter: drop-shadow(2px 2px 10px #92DCFF);
   }
 
+  section#cirurgiasDesktop .card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
   section#cirurgiasDesktop .card h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--text-blue-black);
   }
 
-  section#cirurgiasDesktop .card ul {
+  section#cirurgiasDesktop .card p {
     font-size: 1.4rem;
     margin-bottom: 2rem;
     color: var(--text-blue-black);
+
+    max-width: 70%;
+  }
+
+  section#cirurgiasDesktop .card a {
+    text-decoration: none;
+    text-align: center;
   }
 
   section#cirurgiasDesktop .card a button {
     font-family: var(--poppins);
-
-    background: var(--gradient-verde-verde);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: var(--text-blue-white);
     border-radius: 1rem;
     padding: 1rem 2rem;
     border: none;
     color: var(--text-blue-black);
     font-weight: 500;
-
     transition: all 200ms ease-in-out;
 }
 
@@ -548,15 +684,6 @@
 
   section#material .wrapper {
     padding-inline: 10rem;
-  }
-
-  section#material .wrapper .content {
-    padding-top: initial;
-    padding: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-
-    background-color: transparent;
   }
 
   section#material .wrapper .content .image img {

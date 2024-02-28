@@ -36,11 +36,8 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    slidesPerView: 2,
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 50,
     mousewheel: true,
     keyboard: true,
     loop: true,
