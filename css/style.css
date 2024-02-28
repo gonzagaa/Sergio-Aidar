@@ -101,7 +101,7 @@
 }
 /*SERVICES=================== */
 #services {
-  background-color: var(--white)
+  background: var(--gradient-verde-azul);
 }
 
 #services .logoSmall {
@@ -117,17 +117,20 @@
 }
 
 #services .cards .card {
-  background: var(--gradient-verde-verde);
+  background: var(--white);
   border-radius: 1rem;
   padding: 2rem;
   border: 1px solid #00a597;
 
-  box-shadow:  7px 7px 10px #e0e0e0,
-             -7px -7px 10px #ffffff;
+  box-shadow:  10px 10px 21px #3d96a2,
+             -10px -10px 21px #53ccdc;
 }
 
 #services .cards .card img {
-  width: 5rem;
+  background-color: var(--text-blue-black);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  width: 6rem;
   margin-bottom: 1rem;
 }
 
@@ -167,15 +170,15 @@
   display: none;
 }
 
+#cirurgias {
+  background: var(--white);
+}
+
 #cirurgias header h2 {
   text-align: center;
   margin-bottom: 5rem;
   color: var(--text-blue-black);
   font-size: 3rem;
-}
-
-#cirurgias {
-  background: var(--gradient-verde-verde);
 }
 
 #cirurgias .cards {
@@ -197,8 +200,8 @@
   border-radius: 1rem;
   border-left: 2px solid var(--text-blue-black);
 
-  box-shadow:  10px 10px 30px #099f9a,
-             -10px -10px 30px #0cd7d0;
+  box-shadow:  10px 10px 21px #cdcdcd,
+             -10px -10px 21px #ffffff;
 
   position: relative;
 }
@@ -493,7 +496,17 @@
   }
 
   section#services .wrapper .cards .card {
-    min-height: 38rem;
+    min-height: 20rem;
+    padding-top: 5rem;
+    position: relative;
+  }
+
+  section#services .wrapper .cards .card img {
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+
+    box-shadow: 2px 2px 10px #a0a0a0;
   }
 
   section#cirurgias .wrapper .cards {
@@ -502,7 +515,6 @@
   }
 
   section#cirurgias .wrapper .cards .card {
-    min-height: 24em;
     border: 2px solid var(--text-blue-black);
   }
 
@@ -573,7 +585,7 @@
 
   section#cirurgiasDesktop {
     display: inherit;
-    background: var(--gradient-verde-verde);
+    background: var(--white);
   }
   
   section#cirurgiasDesktop header h2 {
@@ -596,12 +608,11 @@
   }
 
   section#cirurgiasDesktop .card .image {
-    background-color: var(--gradient-verde-azul);
+    background: var(--gradient-verde-azul);
     border-radius: 2rem;
     padding: 1rem;
-    background-color: #04E7DF;
-
-    box-shadow: 2px 2px 10px #099f9a;
+    box-shadow:  10px 10px 21px #cdcdcd,
+             -10px -10px 21px #ffffff;
 
     position: relative;
   }
@@ -658,12 +669,12 @@
     display: flex;
     align-items: center;
     gap: .5rem;
-    background: var(--text-blue-white);
+    background: var(--text-blue-black);
     border-radius: 1rem;
     padding: 1rem 2rem;
     border: none;
-    color: var(--text-blue-black);
-    font-weight: 500;
+    color: var(--text-blue-white);
+    font-weight: 600;
     transition: all 200ms ease-in-out;
 }
 
