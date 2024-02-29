@@ -86,22 +86,14 @@ html {
   width: 100%;
   position: relative;
   z-index: 2;
+
+  animation: moveSergio infinite ease-in-out 4s;
 }
 
-#home .content .image img.blobs {
-  position: absolute;
-  width: 35rem;
-  bottom: -6rem;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-#home .content .image img.eclipse {
-  position: absolute;
-  width: 100%;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%);
+@keyframes moveSergio {
+  50% {
+    transform: scale(1.0050) rotate(1deg);
+  }
 }
 /*SERVICES=================== */
 #services {
