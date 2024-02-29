@@ -241,11 +241,11 @@ html {
 }
 
 #cirurgias .cards .card .text a button {
-  font-family: var(--poppins);
+    font-family: var(--poppins);
     display: flex;
     align-items: center;
     gap: .5rem;
-    background: var(--blue-200);
+    background: var(--white);
     border-radius: 1rem;
     padding: 1rem 2rem;
     border: none;
@@ -487,6 +487,7 @@ html {
   justify-content: center;
   align-items: center;
 
+  margin-inline: .8rem;
   margin-bottom: 3rem;
 
   clip-path: polygon(30% 0%, 70% 0%, 97% 31%, 97% 70%, 70% 100%, 30% 100%, 3% 70%, 3% 30%);
@@ -497,7 +498,6 @@ html {
 
 #tecnologias .image img {
   width: 50%;
-
   filter: drop-shadow(2px 2px 10px #002e2c);
 }
 
@@ -702,6 +702,14 @@ html {
     width: min(120rem, 100%);
   }
 
+  section#cirurgias header h2,
+  section#sobre header h2,
+  section#contato header h2,
+  section#tecnologias header h2,
+  section#localizacao header h2 {
+    font-size: 4rem;
+  }
+
   header#home {
     height: 100vh;
   }
@@ -793,10 +801,6 @@ html {
     left: 28%;
   }
 
-  section#sobre .wrapper .content .text h2 {
-    font-size: 4rem;
-  }
-
   section#sobre .wrapper .content .text p {
     font-size: 1.6rem;
   }
@@ -886,7 +890,6 @@ html {
   section#cirurgiasDesktop header h2 {
     text-align: center;
     color: var(--text-blue-black);
-    font-size: 4rem;
   }
 
   section#cirurgiasDesktop .content {
@@ -1004,6 +1007,10 @@ html {
 
   section#material .wrapper .content .text p {
     font-size: 1.6rem;
+  }
+
+  section#tecnologias .wrapper .image {
+    margin-inline: initial;
   }
 }
 
