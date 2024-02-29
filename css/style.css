@@ -708,7 +708,7 @@ html {
     width: min(120rem, 100%);
   }
 
-  section#cirurgias header h2,
+  section#cirurgiasDesktop header h2,
   section#sobre header h2,
   section#contato header h2,
   section#tecnologias header h2 {
