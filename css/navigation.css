@@ -158,6 +158,7 @@ nav {
   }
 
   .menu .button:hover {
+    box-shadow: 1px 1px 20px #52525281;
   }
   
   .social-links {
@@ -243,17 +244,9 @@ nav {
         font-weight: 700;
         background: var(--gradient-verde-verde);
       }
-  
-      nav#navigation .menu a button:hover {
-      }
 
       nav#navigation.scroll .menu a button {
-        box-shadow: none;
-        background-color: transparent;
-      }
-
-      nav#navigation.scroll .menu a button:hover {
-        box-shadow: none;
+        background-color: #fff;
       }
 
       nav#navigation .menu ul li:nth-child(6) {

@@ -43,3 +43,22 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
   });
 
+  var swiper = new Swiper(".mySwiper2", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1,
+    loop: true,
+    breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+      }
+  });
+
