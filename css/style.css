@@ -140,6 +140,7 @@ html {
   color: var(--text-blue-black);
   font-family: var(--poppins);
   font-size: 1.4rem;
+  font-weight: 300;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -259,7 +260,7 @@ html {
 }
 
 #material .content {
-  margin-top: 5rem;
+  margin-top: 10rem;
   background-image: url(../assets/BG\ EBOOK.jpg);
   background-size: cover;
   border-radius: 1rem;
@@ -491,13 +492,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-inline: .8rem;
-  margin-bottom: 3rem;
-
-  clip-path: polygon(30% 0%, 70% 0%, 97% 31%, 97% 70%, 70% 100%, 30% 100%, 3% 70%, 3% 30%);
   background: var(--gradient-verde-escuro);
-  border-radius: 2rem;
+  border-radius: 2rem 2rem 0 0;
   min-height: 20rem;
 }
 
@@ -516,6 +512,11 @@ html {
 
 #tecnologias .text {
   text-align: center;
+
+  background-color: var(--blue-200);
+  padding: 2rem;
+
+  border-radius: 0 0 2rem 2rem;
 }
 
 #tecnologias .text h3 {
@@ -776,6 +777,10 @@ html {
     border: 2px solid var(--text-blue-black);
   }
 
+  section#material .wrapper .content {
+    margin-top: 5rem;
+  }
+
   section#material .wrapper .content .image img {
     width: 30%;
     left: 5%;
@@ -813,7 +818,6 @@ html {
 
   section#tecnologias .cards .card .image {
     min-height: 25rem;
-    clip-path: none;
   }
 
   section#tecnologias .cards .card .image img {
@@ -1005,11 +1009,6 @@ html {
 
   section#material .wrapper .content .text p {
     font-size: 1.6rem;
-  }
-
-  section#tecnologias .wrapper .cards .card .image {
-    margin-inline: initial;
-    clip-path: polygon(30% 0%, 70% 0%, 93% 31%, 93% 70%, 70% 100%, 30% 100%, 7% 70%, 7% 30%);
   }
 }
 

@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -111,7 +111,7 @@
     <header id="home">
         <div class="wrapper">
            <div class="content">
-                <div class="text">
+                <div data-aos="fade-up-right" class="text">
                    <h1><span>Conhecer a cirurgia plástica</span> e seus benefícios é <span>essencial</span> para <span>decidir</span> realizar o procedimento. A informação é <span>crucial</span> para médico e paciente.</h1> 
 
                    <div class="buttons">
@@ -123,7 +123,7 @@
                    </div>
                 </div>                
 
-                <div class="image">
+                <div data-aos="fade-up-left" class="image">
                     <img class="sergio" src="./assets/SERGIOAIDAR PRINCIPAL.png" alt="Foto de Dr. Sergio Aidar">
                 </div>
            </div>
@@ -133,7 +133,7 @@
     <section id="services">
         <div class="wrapper">
             <div class="cards">
-                <div class="card">
+                <div data-aos="zoom-in-up"  class="card">
                     <div class="image"><img src="./assets/icone tecnologia.svg" alt=""></div>
 
                     <div class="text">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div data-aos="zoom-in-up"  class="card">
                     <div class="image"><img src="./assets/icone homecare.svg" alt=""></div>
 
                     <div class="text">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div data-aos="zoom-in-up"  class="card">
                     <div class="image"><img src="./assets/icone atendimento.svg" alt=""></div>
 
                     <div class="text">
@@ -170,12 +170,12 @@
 
     <section id="cirurgias">
         <div class="wrapper">
-            <header>
+            <header data-aos="fade-up">
                 <h2>Cirurgias</h2>
             </header>
             <div class="content">
                 <div class="cards">
-                    <div class="card">
+                    <div data-aos="zoom-in-up" class="card">
                         <img src="./assets/icons/abdomen.svg" alt="">
 
                         <div class="text">
@@ -186,7 +186,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div data-aos="zoom-in-up" class="card">
                         <img src="./assets/icons/circunferencial.svg" alt="">
 
                         <div class="text">
@@ -197,7 +197,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div data-aos="zoom-in-up" class="card">
                         <img src="./assets/icons/face.svg" alt="">
 
                         <div class="text">
@@ -210,7 +210,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div data-aos="zoom-in-up" class="card">
                         <img src="./assets/icons/lipoescultura.svg" alt="">
 
                         <div class="text">
@@ -224,7 +224,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div data-aos="zoom-in-up" class="card">
                         <img src="./assets/icons/mama.svg" alt="">
 
                         <div class="text">
@@ -237,7 +237,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div data-aos="zoom-in-up" class="card">
                         <img src="./assets/icons/cirurgiaobesidade.svg" alt="">
 
                         <div class="text">
@@ -252,7 +252,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div data-aos="zoom-in-up" class="card">
                         <img src="./assets/icons/outrosprocedimentos.svg" alt="">
 
                         <div class="text">
@@ -272,13 +272,13 @@
 
     <section id="cirurgiasDesktop">
         <div class="wrapper">
-            <header>
+            <header data-aos="fade-up">
                 <h2>Cirurgias</h2>
             </header>
 
             <div class="content swiper mySwiper">
                 <div class="cards swiper-wrapper">
-                    <div class="card swiper-slide">
+                    <div data-aos="fade-up" class="card swiper-slide">
                         <div class="image">
                             <ion-icon name="checkmark-done-outline"></ion-icon>
                             <img src="./assets/icons/abdomen.svg" alt="">
@@ -289,7 +289,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
+                    <div data-aos="fade-up" class="card swiper-slide">
                         <div class="image">
                             <ion-icon name="checkmark-done-outline"></ion-icon>
                             <img src="./assets/icons/circunferencial.svg" alt="">
@@ -301,7 +301,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
+                    <div data-aos="fade-up" class="card swiper-slide">
                         <div class="image">
                             <ion-icon name="checkmark-done-outline"></ion-icon>
                             <img src="./assets/icons/face.svg" alt="">
@@ -313,7 +313,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
+                    <div data-aos="fade-up" class="card swiper-slide">
                         <div class="image">
                             <ion-icon name="checkmark-done-outline"></ion-icon>
                             <img src="./assets/icons/lipoescultura.svg" alt="">
@@ -325,7 +325,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
+                    <div data-aos="fade-up" class="card swiper-slide">
                         <div class="image">
                             <ion-icon name="checkmark-done-outline"></ion-icon>
                             <img src="./assets/icons/mama.svg" alt="">
@@ -337,7 +337,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
+                    <div data-aos="fade-up" class="card swiper-slide">
                         <div class="image">
                             <ion-icon name="checkmark-done-outline"></ion-icon>
                             <img src="./assets/icons/cirurgiaobesidade.svg" alt="">
@@ -349,7 +349,7 @@
                             <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
+                    <div data-aos="fade-up" class="card swiper-slide">
                         <div class="image">
                             <ion-icon name="checkmark-done-outline"></ion-icon>
                             <img src="./assets/icons/outrosprocedimentos.svg" alt="">
@@ -371,7 +371,7 @@
 
     <section id="material">
         <div class="wrapper">
-            <div class="content">
+            <div data-aos="fade-up" class="content">
                 <div class="image">
                     <img src="./assets/Mockup Ebook.png" alt="">
                 </div>
@@ -388,7 +388,7 @@
     <section id="sobre">
         <div class="wrapper">
            <div class="content">
-                <div class="text-box">
+                <div data-aos="fade-up-right" class="text-box">
                     <header>
                         <h2>Quem sou?</h2>
                     </header>
@@ -398,7 +398,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="image">
+                <div data-aos="fade-up-right" class="image">
                     <ion-icon name="checkmark-done-outline"></ion-icon>
                     <img src="./assets/sergioaidar quem sou.jpg" alt="">
                 </div>
@@ -409,30 +409,30 @@
     <section id="tecnologias">
         <div class="wrapper">
             <div class="content">
-                <header>
+                <header data-aos="fade-up">
                     <h2>Tecnologias</h2>
                 </header>
 
                 <div class="swiper mySwiper2">
                     <div class="cards swiper-wrapper">
                         <div class="card swiper-slide">
-                            <div class="image">
+                            <div data-aos="flip-up" class="image">
                                 <img class="bodytite" src="./assets/aparelhos/BodyTite.png" alt="">
                             </div>
     
-                            <div class="text">
+                            <div data-aos="fade-up"  class="text">
                                 <h3><ion-icon name="checkmark-done-outline"></ion-icon>Bodytite</h3>
                                 <p>O BodyTite é um método avançado de contorno corporal que utiliza radiofrequência para lipólise e firmeza da pele. Minimamente invasivo, coloque uma inserção de uma cânula para aplicar energia de radiofrequência controladamente. Eficaz na redução de gordura localizada, também estimula a produção de colágeno, resultando em pele mais firme e tonificada. Ideal para abdômen, flancos, coxas, braços e pescoço, o BodyTite oferece um contorno corporal preciso com menor tempo de recuperação em comparação com cirurgias mais invasivas.
                                 </p>
                             </div>
                         </div>
     
-                        <div class="card swiper-slide">
-                            <div class="image">
+                        <div  class="card swiper-slide">
+                            <div data-aos="flip-up" class="image">
                                 <img class="morpheuspro" src="./assets/aparelhos/Morpheus PRO.png" alt="">
                             </div>
     
-                            <div class="text">
+                            <div data-aos="fade-up" class="text">
                                 <h3><ion-icon name="checkmark-done-outline"></ion-icon>Morpheus Pro</h3>
                                 <p> Morpheus8 é um dispositivo avançado de rejuvenescimento facial e remodelação corporal que combina radiofrequência e microagulhamento fracionado. Essa tecnologia inovadora visa melhorar a firmeza da pele, reduzir rugas e linhas finas, e promover a produção de colágeno e elastina. O Morpheus8 atua profundamente na derme, proporcionando resultados mais duradouros. É frequentemente utilizado em procedimentos estéticos para tratar áreas como rosto, pescoço e corpo, oferecendo uma abordagem não invasiva para aprimorar a textura e a aparência da pele.
                                 </p>
@@ -440,11 +440,11 @@
                         </div>
     
                         <div class="card swiper-slide">
-                            <div class="image">
+                            <div data-aos="flip-up" class="image">
                                 <img class="deepslim" src="./assets/aparelhos/Deep Slim.png" alt="">
                             </div>
     
-                            <div class="text">
+                            <div data-aos="fade-up" class="text">
                                 <h3><ion-icon name="checkmark-done-outline"></ion-icon>Deep Slim</h3>
                                 <p>Com a tecnologia avançada MULMI (Multifocused Ultrasound Low Mechanical Index), o Deep Slim emprega energia de ultrassom multifocal de baixa intensidade, eficaz na redução do processo inflamatório do corpo. Este método inovador é aplicado tanto no pré e pós-operatório quanto no tratamento de questões como gordura localizada, lipedema e rejuvenescimento corporal. Ao utilizar essa abordagem de ultrassom, o Deep Slim oferece uma solução versátil para diversos procedimentos estéticos, promovendo resultados notáveis ​​com o mínimo de invasão e benefícios prejudiciais para a recuperação e a estética do paciente.
                                 </p>
@@ -452,11 +452,11 @@
                         </div>
     
                         <div class="card swiper-slide">
-                            <div class="image">
+                            <div data-aos="flip-up" class="image">
                                 <img class="lipomatic" src="./assets/aparelhos/Lipomatic.png" alt="">
                             </div>
     
-                            <div class="text">
+                            <div data-aos="fade-up" class="text">
                                 <h3><ion-icon name="checkmark-done-outline"></ion-icon>Lipomatic</h3>
                                 <p>O Lipomatic é uma técnica avançada de lipoaspiração que usa vibração mecânica para soltar e quebrar células de gordura antes de aspirá-las. Diferente da lipoaspiração convencional, oferece uma recuperação mais rápida e menos trauma aos tecidos. Utilizado para esculpir áreas como abdômen, flancos, coxas e braços, este procedimento deve ser feito por profissionais construídos em ambiente adequado para garantir segurança e eficácia.
                                 </p>
@@ -464,11 +464,11 @@
                         </div>
     
                         <div class="card swiper-slide">
-                            <div class="image">
+                            <div data-aos="flip-up" class="image">
                                 <img class="prp" src="./assets/aparelhos/prp.png" alt="">
                             </div>
     
-                            <div class="text">
+                            <div data-aos="fade-up" class="text">
                                 <h3><ion-icon name="checkmark-done-outline"></ion-icon>PRP</h3>
                                 <p>O Plasma Rico em Plaquetas (PRP) é uma técnica que utiliza o sangue do paciente para promover regeneração celular e cicatrização. Consiste em coleta de sangue, concentra placas, ricas em fatores de crescimento e componentes bioativos essenciais para peças de tecidos. Utilizado em ortopedia para tratar lesões, odontologia para regeneração óssea, e em dermatologia e cirurgia plástica para melhorar a textura da pele, tratar queda de cabelo e regenerar células. Em estética, é aplicado via injeções para estimular o colágeno e revitalizar a pele, oferecendo uma aparência mais jovem.
                                 </p>
@@ -486,22 +486,22 @@
     <section id="contato">
         <div class="wrapper">
             <div class="content">
-                <header>
+                <header data-aos="fade-up">
                     <h2>Entre em contato:</h2>
                 </header>
 
                 <div class="text">
-                    <div class="telefone card">
+                    <div data-aos="fade-up" class="telefone card">
                         <ion-icon name="phone-portrait-outline"></ion-icon>
                         <p>(62) 3265-0447</p>
                     </div>
 
-                    <div class="whatsapp card">
+                    <div data-aos="fade-up" class="whatsapp card">
                         <ion-icon name="logo-whatsapp"></ion-icon>
                         <p>(62) 99838-1871</p>
                     </div>
 
-                    <div class="local card">
+                    <div data-aos="fade-up" class="local card">
                         <ion-icon name="location-outline"></ion-icon>
                         <p>CEBROM, Goiânia - GO.</p>
                     </div>
@@ -512,7 +512,7 @@
 
     <section id="localizacao">
            <div class="content">
-                <div class="mapa">
+                <div data-aos="fade-up" class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.919606626463!2d-49.243702524060836!3d-16.680905945410217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef19d26fc4579%3A0xd50e21953cd70174!2sCEBROM%20-%20Centro%20Brasileiro%20de%20Radioterapia%2C%20Oncologia%20e%20Mastologia!5e0!3m2!1spt-BR!2sbr!4v1709226059636!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
            </div>
@@ -538,6 +538,7 @@
         <ion-icon name="logo-whatsapp"></ion-icon>
     </a>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
