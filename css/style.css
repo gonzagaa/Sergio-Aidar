@@ -521,7 +521,7 @@ html {
   align-items: center;
   background: var(--gradient-verde-escuro);
   border-radius: 2rem 2rem 0 0;
-  min-height: 20rem;
+  min-height: 30rem;
 }
 
 #tecnologias .image img {
@@ -544,6 +544,8 @@ html {
   padding: 2rem;
 
   border-radius: 0 0 2rem 2rem;
+
+  min-height: 30rem;
 }
 
 #tecnologias .text h3 {
@@ -693,6 +695,22 @@ html {
 
   section#cirurgias .wrapper .cards .card {
     min-height: 25rem;
+  }
+
+  section#tecnologias .wrapper .cards .card .text {
+    min-height: 20rem;
+  }
+
+  section#tecnologias .cards .card .image img {
+    width: 30%;
+  }
+
+  section#tecnologias .cards .card .image img.prp {
+    width: 45%;
+  }
+
+  section#tecnologias .cards .card .image img.lipomatic {
+    width: 40%;
   }
 
   section#material .wrapper .content .image img {
@@ -848,15 +866,19 @@ html {
   }
 
   section#tecnologias .cards .card .image img {
-    width: 50%;
+    width: 35%;
   }
 
   section#tecnologias .cards .card .image img.prp {
-    width: 80%;
+    width: 45%;
   }
 
   section#tecnologias .cards .card .image img.lipomatic {
-    width: 90%;
+    width: 50%;
+  }
+
+  section#tecnologias .wrapper .cards .card .text {
+    min-height: 33rem;
   }
 
   section#tecnologias .cards .card P {
@@ -930,8 +952,10 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 3rem;
+
+    min-height: 55rem;
   }
 
   section#cirurgiasDesktop .card .image {
@@ -1022,6 +1046,14 @@ html {
     cursor: pointer;
   }
 
+  section#tecnologias .cards .card .image {
+    min-height: 30rem;
+  }
+
+  section#tecnologias .wrapper .cards .card .text {
+    min-height: 25rem;
+  }
+
   section#material .wrapper {
     padding-inline: 10rem;
   }
@@ -1049,15 +1081,27 @@ html {
   }
 
   section#tecnologias .cards .card .image img {
-    width: 40%;
+    width: 30%;
   }
 
   section#tecnologias .cards .card .image img.prp {
-    width: 70%;
+    width: 60%;
   }
 
   section#tecnologias .cards .card .image img.lipomatic {
-    width: 80%;
+    width: 70%;
+  }
+
+  section#tecnologias .cards .card .image {
+    min-height: 30rem;
+  }
+
+  section#tecnologias .wrapper .cards .card .text {
+    min-height: 37rem;
+  }
+
+  section#cirurgiasDesktop .card {
+    min-height: 50rem;
   }
 }
 

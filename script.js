@@ -51,13 +51,13 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     loop: true,
     breakpoints: {
-        768: {
+        1024: {
           slidesPerView: 2,
           spaceBetween: 10
         },
-        1200: {
+        1400: {
           slidesPerView: 3,
-          spaceBetween: 20
+          spaceBetween: 10
         }
       }
   });
