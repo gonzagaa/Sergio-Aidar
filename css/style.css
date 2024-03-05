@@ -773,7 +773,7 @@ html {
     position: absolute;
     left: -5%;
     top: 10%;
-    opacity: .4;
+    opacity: .3;
   }
 
   section#services .wrapper .cards {
@@ -1039,6 +1039,27 @@ html {
   }
 }
 
+@media (min-width: 1400px) {
+  .wrapper {
+    width: min(170rem, 100%);
+  }
+
+  section#material .wrapper .content .image img {
+    width: 20%;
+  }
+
+  section#tecnologias .cards .card .image img {
+    width: 40%;
+  }
+
+  section#tecnologias .cards .card .image img.prp {
+    width: 70%;
+  }
+
+  section#tecnologias .cards .card .image img.lipomatic {
+    width: 80%;
+  }
+}
 
 
 

@@ -209,10 +209,6 @@ nav {
         justify-content: space-between;
         width: 54%;
       }
-
-      nav#navigation.scroll {
-        border-bottom: 2px solid #00799b;
-      }
     
       nav#navigation .menu ul:nth-child(1) {
         display: flex;
