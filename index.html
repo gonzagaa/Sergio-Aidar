@@ -21,7 +21,7 @@
 
         <div class="wrapper">
 
-            <a class="logo" href="#home">
+            <a onclick="closeMenu()" class="logo" href="#home">
                 <img class="logobranco" src="./assets/Logo SergioAidar Branca.png" alt="Logo Sergio Aidar">
                 <img class="logopreto" src="./assets/SERGIO AIDAR LOGO PNG.png" alt="Logo Sergio Aidar">
             </a>
@@ -30,28 +30,19 @@
 
                 <ul>
                     <li><a onclick="closeMenu()" href="#home">Sobre</a></li>
-                    <li><a onclick="closeMenu()" href="">Cirurgias</a></li>
-                    <li><a onclick="closeMenu()" href="">Quem sou</a></li>
-                    <li><a onclick="closeMenu()" href="">Tecnologias</a></li>
-                    <li><a onclick="closeMenu()" href="">Guia de cuidados</a></li>
+                    <li><a onclick="closeMenu()" href="#cirurgiasDesktop">Cirurgias</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Quem sou</a></li>
+                    <li><a onclick="closeMenu()" href="#tecnologias">Tecnologias</a></li>
+                    <li><a onclick="closeMenu()" href="#material">Guia de cuidados</a></li>
                 </ul>
 
-                <a class="button" href="#"><button>
+                <a class="button" href="#contato"><button>
                     Contato
                 </button></a>
  
                  <ul class="social-links">
                      <li>
-                         <a target="_blank" href="#">
-                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M17.73 6.27V1.5H16.73C14.7124 1.5132 12.782 2.32396 11.36 3.75531C9.93804 5.18665 9.13998 7.12238 9.14002 9.14V10.09H6.27002V13.91H9.14002V22.5H13.91V13.91H16.77V10.09H13.91V9.14C13.9087 8.76358 13.9817 8.3906 14.1248 8.04245C14.268 7.69431 14.4784 7.37784 14.7442 7.11121C15.0099 6.84457 15.3256 6.63301 15.6732 6.48866C16.0209 6.3443 16.3936 6.27 16.77 6.27H17.73Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                                 </svg>
-                                 
-                         </a>
-                     </li>
- 
-                     <li>
-                         <a target="_blank" href="#">
+                         <a target="_blank" href="https://www.instagram.com/dr.sergioaidar/">
                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  <g clip-path="url(#clip0_273_69)">
                                  <path d="M18.68 1.5H5.32C3.21027 1.5 1.5 3.21027 1.5 5.32V18.68C1.5 20.7897 3.21027 22.5 5.32 22.5H18.68C20.7897 22.5 22.5 20.7897 22.5 18.68V5.32C22.5 3.21027 20.7897 1.5 18.68 1.5Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
@@ -63,18 +54,6 @@
                                  <rect width="24" height="24" fill="white"/>
                                  </clipPath>
                                  </defs>
-                                 </svg>
-                                 
-                         </a>
-                     </li>
- 
-                     <li>
-                         <a target="_blank" href="#">
-                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M23 1H1V22.04H23V1Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                                 <path d="M10.5701 18.2199V11.9999C10.5688 11.5604 10.6542 11.1251 10.8214 10.7187C10.9887 10.3123 11.2345 9.94291 11.5448 9.6317C11.8551 9.32049 12.2237 9.07357 12.6296 8.9051C13.0355 8.73662 13.4706 8.6499 13.9101 8.6499C14.7986 8.6499 15.6506 9.00285 16.2789 9.63109C16.9071 10.2593 17.2601 11.1114 17.2601 11.9999V18.2199" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                                 <path d="M6.73999 7.68994V18.2199" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                                 <path d="M10.5701 7.68994V12.4799" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
                                  </svg>
                                  
                          </a>
@@ -115,7 +94,7 @@
                    <h1><span>Conhecer a cirurgia plástica</span> e seus benefícios é <span>essencial</span> para <span>decidir</span> realizar o procedimento. A informação é <span>crucial</span> para médico e paciente.</h1> 
 
                    <div class="buttons">
-                        <a href="#">
+                        <a href="#contato">
                             <button>
                                 Agende sua consulta
                             </button>
@@ -138,8 +117,8 @@
 
                     <div class="text">
                         <h3>Tecnologia</h3>
-                        <p>A tecnologia transformou a cirurgia plástica, melhorando a precisão, a segurança e a personalização dos procedimentos. Técnicas como PRP, BodyTite, Morpheus, Deep Slim e Lipomatic destacam-se no campo. Essas inovações expandem as opções disponíveis para os pacientes.</p>
-                        <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                        <p>A tecnologia transformou a cirurgia plástica, melhorando a precisão, a segurança e a personalização dos procedimentos. Técnicas como PRP, BodyTite, Morpheus, Deep Slim, Lipomatic, Renuvion, Vaser, One Step e Visbody destacam-se no campo. Essas inovações expandem as opções disponíveis para os pacientes.</p>
+                        <a href="#contato"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                     </div>
                 </div>
 
@@ -149,7 +128,11 @@
                     <div class="text">
                         <h3>Home Care</h3>
                         <p>Nosso serviço de atendimento domiciliar em Goiânia garante o bem-estar dos pacientes com atendimento domiciliar por enfermeiras experientes. Eles oferecem cuidados especializados, como curativos pós-operatórios, garantindo conforto e uma recuperação personalizada no lar do paciente.</p>
-                        <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                        <details>
+                            <summary>IMPORTANTE</summary>
+                            <p> É importante ressaltar que os primeiros dias de pós operatórios são os mais difíceis para o paciente e é difícil se locomover até o consultório. Por isso a ida da enfermeira até o paciente facilita a vida dela e não coloca ela em risco ou desconforto.</p>
+                        </details>
+                        <a href="#contato"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                     </div>
                 </div>
 
@@ -159,7 +142,7 @@
                     <div class="text">
                         <h3>Atendimento</h3>
                         <p>No Cebrom, oferecemos mais do que simples consultas; dispomos de serviços abrangentes de diagnóstico. Os pacientes têm a conveniência de realizar seus exames pré-operatórios diretamente em nossas instalações, proporcionando uma experiência integrada e eficiente.</p>
-                        <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                        <a href="#localizacao"><button>Localização <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                     </div>
                 </div>
             </div>
@@ -183,7 +166,7 @@
                             <ul>
                                 <li>Cirurgia elimina <br> excesso de gordura e pele</li>
                             </ul>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Abdome (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="zoom-in-up" class="card">
@@ -194,7 +177,7 @@
                             <ul>
                                 <li>Cirurgia delimitada à <br> região do abdome e costas</li>
                             </ul>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Circunferencial (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="zoom-in-up" class="card">
@@ -207,7 +190,7 @@
                                 <li>Orelha em abano</li>
                                 <li>Nariz, Papada.</li>
                             </ul>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Face (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="zoom-in-up" class="card">
@@ -221,7 +204,7 @@
                                 <li>Perimamaria, papada</li>
                                 <li>Entre outras</li>
                             </ul>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Lipoescultura (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="zoom-in-up" class="card">
@@ -234,7 +217,7 @@
                                 <li>Prótese de silicone</li>
                                 <li>Reconstrução de mama</li>
                             </ul>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Mama (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="zoom-in-up" class="card">
@@ -249,7 +232,7 @@
                                 <li>Circunferêncial</li>
                                 <li>Abdominoplastia</li>
                             </ul>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Plástica após cirurgia da obesidade (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="zoom-in-up" class="card">
@@ -262,7 +245,7 @@
                                 <li>Ciacatrizes e Queloides</li>
                                 <li>Enxerto</li>
                             </ul>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Preenchimento  (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                 </div>   
@@ -286,7 +269,7 @@
                         <div class="text">
                             <h3>Abdômen</h3>
                             <p>Cirurgia elimina excesso de gordura e pele</p>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Abdome (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card swiper-slide">
@@ -298,7 +281,7 @@
                         <div class="text">
                             <h3>Circunferencial</h3>
                             <p>Cirurgia delimitada à região do abdome e costas</p>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Circunferencial (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card swiper-slide">
@@ -310,7 +293,7 @@
                         <div class="text">
                             <h3>Face</h3>
                             <p>Lifiting, Pálpebras, Nariz, Orelha em abano, Papada.</p>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Face (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card swiper-slide">
@@ -322,7 +305,7 @@
                         <div class="text">
                             <h3>Lipoescultura</h3>
                             <p>Abdome, costa, cintura, braço, coxa, glúteo, perimamaria, papada, entre outras.</p>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Lipoescultura (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card swiper-slide">
@@ -334,7 +317,7 @@
                         <div class="text">
                             <h3>Mama</h3>
                             <p>Mamoplastia, prótese de silicone, reconstrução de mama.</p>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Mama (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card swiper-slide">
@@ -346,7 +329,7 @@
                         <div class="text">
                             <h3>Plástica após <br> cirurgia de obesidade</h3>
                             <p>Cruroplastia (coxa), Branquioplastia (braço), Mastopexia (mama), Circunferêncial, Abdominoplastia</p>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Plástica após cirurgia da obesidade (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card swiper-slide">
@@ -358,7 +341,7 @@
                         <div class="text">
                             <h3>Outros procedimentos</h3>
                             <p>Tratamento, Cicatrizes e Queloides, Enxerto.</p>
-                            <a href="#"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                            <a target="_blank" href="./pdf/Preenchimento  (1).pdf"><button>Saiba mais <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
                         </div>
                     </div>
                 </div>   
