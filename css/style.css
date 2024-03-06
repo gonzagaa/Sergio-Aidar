@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--gradient-verde-escuro);
+}
+
 #home {
   background-image: url(../assets/GRADIENTE\ BG\ SERGIOAIDAR.jpg);
   background-size: cover;
